@@ -1,0 +1,15 @@
+idf_component_register(
+    SRCS
+        "ch9431.c"
+        "ch9431_cmd.c"
+        "ch9431_port.c"
+    INCLUDE_DIRS
+        "include"
+    PRIV_INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_driver_spi
+        esp_driver_gpio
+    PRIV_REQUIRES
+        esp_rom
+)
